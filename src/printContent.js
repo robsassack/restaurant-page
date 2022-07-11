@@ -1,4 +1,4 @@
-export default function printContent() {
+export default function printContent(tab) {
   const element = document.createElement("div");
 
   const mainText = document.createElement("p");
