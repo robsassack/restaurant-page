@@ -1,3 +1,5 @@
+import restImg from './spencer-davis-R_J6KjC68E4-unsplash.jpg';
+
 function mainContent() {
   const element = document.createElement("div");
 
@@ -5,7 +7,7 @@ function mainContent() {
   mainText.innerText = `Welcome to Rob's Diner! Come on by and help yourself to our menu of American classics!`;
 
   const image = document.createElement("img");
-  image.src = "../src/spencer-davis-R_J6KjC68E4-unsplash.jpg";
+  image.src = restImg;
   image.height = 300;
 
   const hours = document.createElement("p");

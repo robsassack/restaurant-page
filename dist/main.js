@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pri
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactContent\": () => (/* binding */ contactContent),\n/* harmony export */   \"mainContent\": () => (/* binding */ mainContent),\n/* harmony export */   \"menuContent\": () => (/* binding */ menuContent)\n/* harmony export */ });\nfunction mainContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const mainText = document.createElement(\"p\");\r\n  mainText.innerText = `Welcome to Rob's Diner! Come on by and help yourself to our menu of American classics!`;\r\n\r\n  const image = document.createElement(\"img\");\r\n  image.src = \"../src/spencer-davis-R_J6KjC68E4-unsplash.jpg\";\r\n  image.height = 300;\r\n\r\n  const hours = document.createElement(\"p\");\r\n  hours.innerText = \"Hours\";\r\n\r\n  const hoursList = document.createElement(\"ul\");\r\n  const hours1 = document.createElement(\"li\");\r\n  hours1.innerText = \"Monday - Friday: 7am - 9pm\";\r\n  const hours2 = document.createElement(\"li\");\r\n  hours2.innerText = \"Saturday: 8am - 10pm\";\r\n  const hours3 = document.createElement(\"li\");\r\n  hours3.innerText = \"Sunday: Closed\";\r\n  hoursList.appendChild(hours1);\r\n  hoursList.appendChild(hours2);\r\n  hoursList.appendChild(hours3);\r\n\r\n  element.appendChild(mainText);\r\n  element.appendChild(image);\r\n  element.appendChild(hours);\r\n  element.appendChild(hoursList);\r\n\r\n  return element;\r\n}\r\n\r\nfunction menuContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const mainText = document.createElement(\"p\");\r\n  mainText.innerText = \"Menu\";\r\n\r\n  element.appendChild(mainText);\r\n\r\n  return element;\r\n}\r\n\r\nfunction contactContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const contactText = document.createElement(\"p\");\r\n  contactText.innerText =\r\n    \"You can find us at this location or contact us with the form below.\";\r\n\r\n  element.appendChild(contactText);\r\n\r\n  return element;\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/printContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactContent\": () => (/* binding */ contactContent),\n/* harmony export */   \"mainContent\": () => (/* binding */ mainContent),\n/* harmony export */   \"menuContent\": () => (/* binding */ menuContent)\n/* harmony export */ });\n/* harmony import */ var _spencer_davis_R_J6KjC68E4_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./spencer-davis-R_J6KjC68E4-unsplash.jpg */ \"./src/spencer-davis-R_J6KjC68E4-unsplash.jpg\");\n\r\n\r\nfunction mainContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const mainText = document.createElement(\"p\");\r\n  mainText.innerText = `Welcome to Rob's Diner! Come on by and help yourself to our menu of American classics!`;\r\n\r\n  const image = document.createElement(\"img\");\r\n  image.src = _spencer_davis_R_J6KjC68E4_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n  image.height = 300;\r\n\r\n  const hours = document.createElement(\"p\");\r\n  hours.innerText = \"Hours\";\r\n\r\n  const hoursList = document.createElement(\"ul\");\r\n  const hours1 = document.createElement(\"li\");\r\n  hours1.innerText = \"Monday - Friday: 7am - 9pm\";\r\n  const hours2 = document.createElement(\"li\");\r\n  hours2.innerText = \"Saturday: 8am - 10pm\";\r\n  const hours3 = document.createElement(\"li\");\r\n  hours3.innerText = \"Sunday: Closed\";\r\n  hoursList.appendChild(hours1);\r\n  hoursList.appendChild(hours2);\r\n  hoursList.appendChild(hours3);\r\n\r\n  element.appendChild(mainText);\r\n  element.appendChild(image);\r\n  element.appendChild(hours);\r\n  element.appendChild(hoursList);\r\n\r\n  return element;\r\n}\r\n\r\nfunction menuContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const mainText = document.createElement(\"p\");\r\n  mainText.innerText = \"Menu\";\r\n\r\n  element.appendChild(mainText);\r\n\r\n  return element;\r\n}\r\n\r\nfunction contactContent() {\r\n  const element = document.createElement(\"div\");\r\n\r\n  const contactText = document.createElement(\"p\");\r\n  contactText.innerText =\r\n    \"You can find us at this location or contact us with the form below.\";\r\n\r\n  element.appendChild(contactText);\r\n\r\n  return element;\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/printContent.js?");
+
+/***/ }),
+
+/***/ "./src/spencer-davis-R_J6KjC68E4-unsplash.jpg":
+/*!****************************************************!*\
+  !*** ./src/spencer-davis-R_J6KjC68E4-unsplash.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c19b108d2ef07365cf25.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/spencer-davis-R_J6KjC68E4-unsplash.jpg?");
 
 /***/ })
 
@@ -181,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +217,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
