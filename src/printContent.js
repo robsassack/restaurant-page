@@ -1,4 +1,4 @@
-export default function printContent(tab) {
+function mainContent() {
   const element = document.createElement("div");
 
   const mainText = document.createElement("p");
@@ -29,3 +29,28 @@ export default function printContent(tab) {
 
   return element;
 }
+
+function menuContent() {
+  const element = document.createElement("div");
+
+  const mainText = document.createElement("p");
+  mainText.innerText = "Menu";
+
+  element.appendChild(mainText);
+
+  return element;
+}
+
+function contactContent() {
+  const element = document.createElement("div");
+
+  const contactText = document.createElement("p");
+  contactText.innerText =
+    "You can find us at this location or contact us with the form below.";
+
+  element.appendChild(contactText);
+
+  return element;
+}
+
+export { mainContent, menuContent, contactContent };

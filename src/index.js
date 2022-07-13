@@ -1,4 +1,4 @@
-import printContent from "./printContent.js";
+import { mainContent, menuContent, contactContent } from "./printContent.js";
 import "./style.css";
 
 let content = document.querySelector(".content");
@@ -9,21 +9,19 @@ let contact = document.querySelector(".contact");
 home.addEventListener("click", () => {
   console.log("Home");
   content.textContent = "";
-  content.appendChild(component());
+  content.appendChild(mainContent());
 });
 
 menu.addEventListener("click", () => {
   console.log("Menu");
   content.textContent = "";
+  content.appendChild(menuContent());
 });
 
 contact.addEventListener("click", () => {
   console.log("Contact");
   content.textContent = "";
+  content.appendChild(contactContent());
 });
 
-function component() {
-  return printContent();
-}
-
-content.appendChild(component());
+content.appendChild(mainContent());
