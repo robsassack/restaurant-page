@@ -1,4 +1,7 @@
-import restImg from './spencer-davis-R_J6KjC68E4-unsplash.jpg';
+import restImg from "./spencer-davis-R_J6KjC68E4-unsplash.jpg";
+import friesImg from "./christian-bolt-Uf0aVyl5C70-unsplash.jpg";
+import burgerImg from "./food-photographer-phototastyfood-ru-E94j3rMcxlw-unsplash.jpg";
+import shakeImg from "./jonathan-borba-7TeR1A1MUpM-unsplash.jpg";
 
 function mainContent() {
   const element = document.createElement("div");
@@ -10,8 +13,10 @@ function mainContent() {
   image.src = restImg;
   image.height = 300;
 
+  const hoursContainer = document.createElement("div");
   const hours = document.createElement("p");
   hours.innerText = "Hours";
+  hoursContainer.appendChild(hours);
 
   const hoursList = document.createElement("ul");
   const hours1 = document.createElement("li");
@@ -23,11 +28,11 @@ function mainContent() {
   hoursList.appendChild(hours1);
   hoursList.appendChild(hours2);
   hoursList.appendChild(hours3);
+  hoursContainer.appendChild(hoursList);
 
   element.appendChild(mainText);
   element.appendChild(image);
-  element.appendChild(hours);
-  element.appendChild(hoursList);
+  element.appendChild(hoursContainer);
 
   return element;
 }
@@ -35,10 +40,46 @@ function mainContent() {
 function menuContent() {
   const element = document.createElement("div");
 
-  const mainText = document.createElement("p");
-  mainText.innerText = "Menu";
+  let menuData = [
+    {
+      name: "Cheeseburger",
+      desc: "Classic cheeseburger, served with lettuce and tomato",
+      price: "$5",
+      image: burgerImg,
+    },
+    {
+      name: "French Fries",
+      desc: "French fries made with our special seasoning",
+      price: "$2",
+      image: friesImg,
+    },
+    {
+      name: "Milkshake",
+      desc: "Rich and sweet milkshake",
+      price: "$3",
+      image: shakeImg,
+    },
+  ];
 
-  element.appendChild(mainText);
+  menuData.forEach((item) => {
+    const menuItem = document.createElement("div");
+
+    const itemImg = document.createElement("img");
+    itemImg.src = item.image;
+    itemImg.height = 100;
+    menuItem.appendChild(itemImg);
+    const itemName = document.createElement("p");
+    itemName.innerText = item.name;
+    menuItem.appendChild(itemName);
+    const itemDesc = document.createElement("p");
+    itemDesc.innerText = item.desc;
+    menuItem.appendChild(itemDesc);
+    const itemPrice = document.createElement("p");
+    itemPrice.innerText = item.price;
+    menuItem.appendChild(itemPrice);
+
+    element.appendChild(menuItem);
+  });
 
   return element;
 }
