@@ -87,11 +87,57 @@ function menuContent() {
 function contactContent() {
   const element = document.createElement("div");
 
-  const contactText = document.createElement("p");
-  contactText.innerText =
-    "You can find us at this location or contact us with the form below.";
+  const address = document.createElement("div");
+  const addressTitle = document.createElement("p");
+  addressTitle.innerText = "Address";
+  address.appendChild(addressTitle);
+  const addressStreet = document.createElement("p");
+  addressStreet.innerText = "123 Main Street";
+  address.appendChild(addressStreet);
+  const addressState = document.createElement("p");
+  addressState.innerText = "Troy, MI 48007";
+  address.appendChild(addressState);
 
-  element.appendChild(contactText);
+  const contactContainer = document.createElement("div");
+  const contactForm = document.createElement("form");
+  const name = document.createElement("input");
+  name.setAttribute("type", "text");
+  name.setAttribute("name", "name");
+  name.setAttribute("placeholder", "Name");
+  name.required = true;
+  contactForm.appendChild(name);
+
+  const phone = document.createElement("input");
+  phone.setAttribute("type", "tel");
+  phone.setAttribute("name", "phone");
+  phone.setAttribute("placeholder", "Phone #");
+  phone.required = true;
+  contactForm.appendChild(phone);
+
+  const email = document.createElement("input");
+  email.setAttribute("type", "email");
+  email.setAttribute("name", "email");
+  email.setAttribute("placeholder", "Email");
+  email.required = true;
+  contactForm.appendChild(email);
+
+  const message = document.createElement("textarea");
+  message.setAttribute("name", "msg");
+  message.setAttribute("cols", "30");
+  message.setAttribute("rows", "5");
+  message.setAttribute("placeholder", "Questions, comments, or concerns");
+  message.required = true;
+  contactForm.appendChild(message);
+
+  const submit = document.createElement("input");
+  submit.setAttribute("type", "submit");
+  submit.setAttribute("value", "Submit");
+  contactForm.appendChild(submit);
+
+  contactContainer.appendChild(contactForm);
+
+  element.appendChild(address);
+  element.appendChild(contactContainer);
 
   return element;
 }
