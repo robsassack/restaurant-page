@@ -24,4 +24,4 @@ contact.addEventListener("click", () => {
   content.appendChild(contactContent());
 });
 
-content.appendChild(mainContent());
+content.appendChild(contactContent());

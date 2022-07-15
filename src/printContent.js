@@ -98,27 +98,23 @@ function contactContent() {
   addressState.innerText = "Troy, MI 48007";
   address.appendChild(addressState);
 
-  const contactContainer = document.createElement("div");
-  const contactForm = document.createElement("form");
+  const contactForm = document.createElement("div");
   const name = document.createElement("input");
   name.setAttribute("type", "text");
   name.setAttribute("name", "name");
   name.setAttribute("placeholder", "Name");
-  name.required = true;
   contactForm.appendChild(name);
 
   const phone = document.createElement("input");
   phone.setAttribute("type", "tel");
   phone.setAttribute("name", "phone");
   phone.setAttribute("placeholder", "Phone #");
-  phone.required = true;
   contactForm.appendChild(phone);
 
   const email = document.createElement("input");
   email.setAttribute("type", "email");
   email.setAttribute("name", "email");
   email.setAttribute("placeholder", "Email");
-  email.required = true;
   contactForm.appendChild(email);
 
   const message = document.createElement("textarea");
@@ -126,7 +122,6 @@ function contactContent() {
   message.setAttribute("cols", "30");
   message.setAttribute("rows", "5");
   message.setAttribute("placeholder", "Questions, comments, or concerns");
-  message.required = true;
   contactForm.appendChild(message);
 
   const submit = document.createElement("input");
@@ -134,10 +129,8 @@ function contactContent() {
   submit.setAttribute("value", "Submit");
   contactForm.appendChild(submit);
 
-  contactContainer.appendChild(contactForm);
-
   element.appendChild(address);
-  element.appendChild(contactContainer);
+  element.appendChild(contactForm);
 
   return element;
 }
