@@ -1,6 +1,7 @@
 import restImg from "./spencer-davis-R_J6KjC68E4-unsplash.jpg";
 import friesImg from "./christian-bolt-Uf0aVyl5C70-unsplash.jpg";
 import burgerImg from "./food-photographer-phototastyfood-ru-E94j3rMcxlw-unsplash.jpg";
+import chickenImg from './loes-klinker-4DDVPoM5QWI-unsplash.jpg';
 import shakeImg from "./jonathan-borba-7TeR1A1MUpM-unsplash.jpg";
 
 function mainContent() {
@@ -46,6 +47,12 @@ function menuContent() {
       desc: "Classic cheeseburger, served with lettuce and tomato",
       price: "$5",
       image: burgerImg,
+    },
+    {
+      name: "Chicken Sandwich",
+      desc: "Chicken sandwich, served with pickles, cheese, and lettuce",
+      price: "$4",
+      image: chickenImg,
     },
     {
       name: "French Fries",
