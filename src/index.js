@@ -7,21 +7,27 @@ let menu = document.querySelector(".menu");
 let contact = document.querySelector(".contact");
 
 home.addEventListener("click", () => {
-  console.log("Home");
+  home.classList.add("selected");
+  menu.classList.remove("selected");
+  contact.classList.remove("selected");
   content.textContent = "";
   content.appendChild(mainContent());
 });
 
 menu.addEventListener("click", () => {
-  console.log("Menu");
+  menu.classList.add("selected");
+  home.classList.remove("selected");
+  contact.classList.remove("selected");
   content.textContent = "";
   content.appendChild(menuContent());
 });
 
 contact.addEventListener("click", () => {
-  console.log("Contact");
+  contact.classList.add("selected");
+  menu.classList.remove("selected");
+  home.classList.remove("selected");
   content.textContent = "";
   content.appendChild(contactContent());
 });
 
-content.appendChild(contactContent());
+content.appendChild(mainContent());
