@@ -17,6 +17,11 @@ nav {
   padding: 20px;
 }
 
+nav > h1 {
+  cursor: default;
+  font-size: 2rem;
+}
+
 .links {
   display: flex;
   align-items: center;
@@ -30,7 +35,109 @@ nav {
   padding: 5px 20px;
 }
 
+.links > div:hover {
+  background-color: rgb(177, 177, 177);
+  border-radius: 5px;
+}
+
 .selected {
   background-color: rgb(213, 213, 213);
   border-radius: 5px;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.hero-container > p {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.hours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours-container > p {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.hours-container > ul {
+  list-style-type: none;
+}
+
+.menu-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-container > div {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+}
+
+.menu-container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.menu-container > div > div > p:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.menu-container > div > div > p:last-child {
+  font-style: italic;
+}
+
+.contact-container {
+  margin: 0 auto;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.address-container > p:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 5px;
+}
+
+.form-container > input:last-child {
+  width: 100px;
+  align-self: center;
 }
