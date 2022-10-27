@@ -2,6 +2,8 @@
 
 A basic restaurant page with JavaScript page switching.
 
+[Live Demo](https://robsassack.github.io/restaurant-page/)
+
 Image credits:
 
 * [https://unsplash.com/photos/R_J6KjC68E4](https://unsplash.com/photos/R_J6KjC68E4)
